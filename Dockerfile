@@ -53,5 +53,5 @@ CMD ["/usr/bin/supervisord"]
 USER www
 
 # Expose port 9000 and start php-fpm server
-EXPOSE 8080
+EXPOSE 80
 CMD ["php-fpm"]
