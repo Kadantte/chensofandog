@@ -52,7 +52,7 @@ CMD ["/usr/bin/supervisord"]
 # Change current user to www
 USER www
 
-ARG request_domain=0.0.0.0
+ARG request_domain=0.0.0.0:9000
 ENV request_domain=$request_domain
 
 # Expose port 9000 and start php-fpm server
