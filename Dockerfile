@@ -34,9 +34,6 @@ RUN docker-php-ext-install gd
 RUN docker-php-ext-configure bcmath --enable-bcmath
 RUN docker-php-ext-install bcmath
 
-ARG DOCKER_HOST=0.0.0.0
-ENV DOCKER_HOST=0.0.0.0
-
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
